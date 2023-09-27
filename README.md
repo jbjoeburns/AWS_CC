@@ -34,7 +34,7 @@ Multiclouds: More than 1 cloud service from more than 1 cloud vendor, public or 
 
 ## Different Types of Cloud Service
 
-Infrastructure as a Service (IaaS): Contains basics for cloud IT inluding networking features and storage. Allows you to build your system to suit your needs.
+Infrastructure as a Service (IaaS): Contains basics for cloud IT including networking features and storage. Allows you to build your system to suit your needs.
 
 Platform as a Service (PaaS): Provides underlying infrastructure like updates, maintenance, patching and other aspects of running your application.
 
@@ -45,14 +45,15 @@ Pick based on how much control you need, in exchange for having to manage the se
 ## Advantages/Disadvantages of Cloud
 
 Adv:
+- ONLY NEED TO PAY FOR WHAT YOU NEED! Cost savings!!!
 - Effective way of backing up data
-- Can access data on any machine
-- Easily scalable with upgrades that allow for expansion, and scale down when demand drops
+- Can access data on any machine, ***good mobility***
+- Easily ***scalable*** with upgrades that allow for expansion, and scale down when demand drops
 - Secure
 - Cost savings as no need to invest or maintain hardware
 - Easy to manage cost, provided its managed properly
 - Use what you need
-- Global reach, can go global in seconds
+- Global reach, ***good mobility*** can go global in seconds
 - Easy to keep up with market trends
 - Improved collaboration by working on the same server
 - Economy of scale, big organisations can operate on a larger scale and pass savings on to you/your business
@@ -129,16 +130,3 @@ AWS calls it's virtual machines in this server "instances".
 
 ***MAKE SURE TO ALWAYS USE IRELAND AS YOUR REGION (in the top right corner), ALWAYS DOUBLE CHECK!!!***
 
-To launch an EC2 instance:
-- Click on services
-- Then Compute
-- Then EC2
-- Then go down to instances
-- And click on 'Launch Instances'
-- Need to input name
-  - Keep to this format "tech254_joe_testvm"
-  - **Make sure the name is descriptive, and always starts with "tech254_joe_"**
-- Select OS, which in our case is ***Ubuntu*** and using the 2nd free tier down from the top
-- Instance type should be t2.micro (free tier)
-- Key pair should be tech 254
-- 
