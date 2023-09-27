@@ -58,7 +58,7 @@ Then we set up security details...
 3. Installs software. The 'name' refers to the name of the software, in this case, nginx.
    - `sudo apt install <name> -y`
 4. Now need to start nginx.
-   - `sudo systemctl start nginx`: Starts nginx.
+   - `sudo systemctl start nginx`
 5. Then check if nginx is correctly running.
    - `sudo systemctl status nginx`
 
