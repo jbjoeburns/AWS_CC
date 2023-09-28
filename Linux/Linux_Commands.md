@@ -1,9 +1,53 @@
-## Shell Commands (shell is a UI that lets you input commands)
+## Shell
 
 ### Piping
 **USING `|` IS CALLED PIPING!!**
 
 Piping is useful for chaining multiple compatible commands together!
+
+### bash scripting
+
+Use nano for this! Good to plan out what the script will do using pseudocode (write comments first about what you want the script to do before any actual commands).
+
+`nano <script name>.sh` 
+
+Then, when in the text editor include...
+
+`#!/bin/bash` which tells the system to use bash as an interpreter.
+
+Write the script and save the file.
+
+`sudo chmod +x <filename>.sh` makes the file executable
+
+`./<filename>.sh` runs the script!
+
+***For example!***
+```
+    #!/bin/bash
+    
+    #update packages
+    sudo apt update
+    
+    #upgrade packages
+    sudo apt upgrade -y
+    
+    #install nginx
+    sudo apt install nginx -y
+    
+    #restart/start nginx
+    sudo systemctl restart nginx
+    
+    #enable nginx
+    sudo systemctl enable nginx
+```
+
+### Running in background
+
+Use `&` after a command to have it run in the background rather than the foreground.
+
+For example, `sleep 50 &` will have sleep run for 50 seconds in the background.
+
+## Commands
 
 ### Apt
 
@@ -20,6 +64,10 @@ Note: Many `apt` commands require you to use `sudo` before the command. This exe
 `sudo systemctl start nginx`: Starts nginx.
 
 `sudo systemctl status nginx`: Checks if nginx is running.
+
+`sudo systemctl restart nginx`: Restarts nginx, generally better as it will start it if it's not running, and restart it if it is.
+
+`sudo systemctl enable nginx`: Starts nginx.
 
 ### uname
 
@@ -102,3 +150,50 @@ For both, you can use the argument `-<number>` will give you the specified numbe
 
 `tree <path>`: Works like treesize on windows, **needs to be installed first**.
 
+### ps and top
+
+`ps`: Will tell you all the processes **the current user** has running.
+
+Every process has a PID (process id) and CMD is the command that was used to initiate that process.
+
+`ps --help simple`: This will tell you the arguments you can use with ps.
+
+`ps -A`: This will show you **ALL** processes, not just the ones started by the user.
+
+`ps -v`: Gives a more ***v***erbose description of each process.
+
+`top`: Gives live readout of top resources, ranked by what the user chooses (like ctrl M will rank by most memory used)
+
+### sleep
+
+`sleep <number>`: Runs a dummy process for a defined number of seconds in the foreground, prevents user inputs because of this.
+
+### kill
+
+`kill -1 <PID>`: Will kill a process. PID can be obtained from `ps`.
+
+Can use `-15` rather than `-1` to force end a process. If this fails to work you can use `-9`, which will absolutely kill a process. Additionally `kill -KILL <PID>` functions the same as `-9`.
+
+### ls
+
+`ls`: Lists files in CWD. `-a` lists hidden files too.
+
+`ls -l`: Lists permissions that files in a directory have. Starts with owner rwx permissions, then elevated group, then standard user. Formatted as drwxrwxrwx, where the d denotes a directory.
+
+### chmod
+
+Stands for change mode. Allows changing of permissions.
+
+`chmod <user type>+<permission> <filename>`: Where user type is o for owner, g for group and u for user. Permissions can be r, w, x for read, write and execute respectively.
+
+Can also use shorthand `chmod <number code> <filename>`: Where the number code is a shorthand for what user gets what permission. You can calculate this number using sites like https://chmod-calculator.com/.
+
+### env and printenv
+
+`printenv` or `env`: Prints current environment variables. Format is "VARIABLE: variable contents".
+
+`printenv <variable>`: Prints content of specified variable.
+
+`<VARIBLE>=<contents>`: Creates new **local** variable to specifications. Makes it in your bash client.
+
+`export <VARIBLE>=<contents>`: Creates new **global** variable to specifications. Creates it on an OS level.
