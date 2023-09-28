@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3a715413-4f9c-479a-92cb-58baea7d5bc8" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RepoConnector.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RepoMakerConnect.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RepoMakerKeygen.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssh_name.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Linux/Linux_Commands.md" beforeDir="false" afterPath="$PROJECT_DIR$/Linux/Linux_Commands.md" afterDir="false" />
     </list>
@@ -32,6 +36,11 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/joe-b/Documents/Coding/AWS_and_Cloud_Computing&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\joe-b\Documents\Coding\AWS_and_Cloud_Computing" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="AWS_and_Cloud_Computing" />

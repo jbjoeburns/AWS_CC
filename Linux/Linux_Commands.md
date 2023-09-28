@@ -41,6 +41,8 @@ Write the script and save the file.
     sudo systemctl enable nginx
 ```
 
+Setting variables can be done using `variable_name=` then whatever command you want, surrounded by backticks.
+
 ### Running in background
 
 Use `&` after a command to have it run in the background rather than the foreground.
