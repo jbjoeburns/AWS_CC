@@ -199,3 +199,9 @@ Can also use shorthand `chmod <number code> <filename>`: Where the number code i
 `<VARIBLE>=<contents>`: Creates new **local** variable to specifications. Makes it in your bash client.
 
 `export <VARIBLE>=<contents>`: Creates new **global** variable to specifications. Creates it on an OS level.
+
+### scp
+
+`scp`: Copies files from local machine .
+
+`scp -i "<filepath to .pem file>" -r <filepath to your local app folder> Ubuntu@<public IP>:<remote filepath>`: Will copy local files to AWS servers. -i is for identifier, and needs to be followed with filepath to private key. -r is for recursive and should precede any folders you want to copy.
