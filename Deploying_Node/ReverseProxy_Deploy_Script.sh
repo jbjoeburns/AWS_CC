@@ -7,8 +7,8 @@ sudo apt upgrade -y
 # install nginx
 sudo apt install nginx -y
 
-# will replace line 51 ('try_files $uri $uri/ =404;', which prevents images from loading) with 'proxy_pass http://54.194.220.142:3000/;' which makes the landing page of the site redirect to port 3000
-sed '51s|try_files $uri $uri/ =404;|proxy_pass http://54.194.220.142:3000/;|' /etc/nginx/sites-available/default
+# will replace line 51 ('try_files $uri $uri/ =404;', which prevents images from loading) with 'proxy_pass http://<IP>:3000/;' which makes the landing page of the site redirect to port 3000
+sudo sed '51s|try_files $uri $uri/ =404;|proxy_pass http://<IP>:3000/;|' /etc/nginx/sites-available/default
 
 #restart/start nginx
 sudo systemctl restart nginx
