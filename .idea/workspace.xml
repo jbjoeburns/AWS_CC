@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a715413-4f9c-479a-92cb-58baea7d5bc8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/MongoDB/mongodb_setup.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reverse_Proxy/Reverse_Proxy.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MongoDB/MongoDB.md" beforeDir="false" afterPath="$PROJECT_DIR$/MongoDB/MongoDB.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deploying_Node/Node_Deployment.md" beforeDir="false" afterPath="$PROJECT_DIR$/Deploying_Node/Node_Deployment.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deploying_Node/ReverseProxy_Deploy_Script.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Reverse_Proxy/ReverseProxy_Deploy_Script.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +38,7 @@
       <recent name="C:\Users\joe-b\Documents\Coding\AWS_and_Cloud_Computing" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\joe-b\Documents\Coding\AWS_and_Cloud_Computing\Reverse_Proxy" />
       <recent name="C:\Users\joe-b\Documents\Coding\AWS_and_Cloud_Computing\Setting_Up_AWS_Instance" />
       <recent name="C:\Users\joe-b\Documents\Coding\AWS_and_Cloud_Computing\MongoDB" />
       <recent name="C:\Users\joe-b\Documents\Coding\AWS_and_Cloud_Computing\Deploying_Node" />
