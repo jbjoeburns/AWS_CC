@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a715413-4f9c-479a-92cb-58baea7d5bc8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Buckets_and_AWSCLI/Buckets_and_AWSCLI.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Buckets_and_AWSCLI/bucket_scripts/delete_bucket.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Buckets_and_AWSCLI/bucket_scripts/delete_file.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Buckets_and_AWSCLI/bucket_scripts/download_file.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Buckets_and_AWSCLI/bucket_scripts/list_buckets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Buckets_and_AWSCLI/bucket_scripts/list_objects_in_bucket.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Buckets_and_AWSCLI/bucket_scripts/make_bucket.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Buckets_and_AWSCLI/bucket_scripts/upload_file.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Buckets_and_AWSCLI/Buckets_and_AWSCLI.md" beforeDir="false" afterPath="$PROJECT_DIR$/Buckets_and_AWSCLI/Buckets_and_AWSCLI.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

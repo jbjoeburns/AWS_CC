@@ -84,3 +84,36 @@ Then to remove the bucket itself, use
 aws s3 rb s3://tech254-joe-bucket/
 ```
 
+## boto3 commands
+
+First need to install boto3 with pip...
+``` 
+pip install boto3[crt]
+```
+
+Then, proceed any script with `import boto3`
+
+### Resource vs client
+
+To set the s3 interface you will be using, you need to either use `client = boto3.client('s3')` or `resource = boto3.resource('s3')`
+
+Old boto3 used to rely on using 'client' for commands whereas generally resource is much cleaner. It is recommended to use resource when you can, but sometimes you are required to interact with the bucket using client as the functionality just isn't there for resource.
+
+eg...
+
+Downloading a file with resource
+```
+resource = boto3.resource('s3')
+my_bucket = resource.Bucket('MyBucket')
+my_bucket.download_file('file.txt', 'local_filename.txt')
+```
+vs downloading a file with client
+``` 
+client = boto3.client('s3')
+with open('file.txt', 'wb') as data:
+        client.download_fileobj('MyBucket', 'file.txt', data)
+```
+
+Resource script is far more understandable.
+
+Examples of scripts that use both resource and client can be found in the bucket_scripts folder.
