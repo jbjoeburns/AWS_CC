@@ -117,3 +117,56 @@ with open('file.txt', 'wb') as data:
 Resource script is far more understandable.
 
 Examples of scripts that use both resource and client can be found in the bucket_scripts folder.
+
+Examples below will use resource instead, and ***assume that boto3 is imported and the resource is given the variable name "s3"!***
+
+### list buckets
+```
+for bucket in s3.buckets.all():
+    print(bucket.name)
+```
+This will iterate through the bucket list and print each.
+
+### Create bucket
+```
+response = s3.create_bucket(
+    Buckets = '<bucket name>',
+    CreateBucketConfiguration = {'LocationConstraint': 'eu-west-1'}
+)
+
+print(response)
+```
+Can define the bucket name, and the location it will be made here (not defining the location will make it default)
+
+### Upload to bucket
+``` 
+response = s3.upload_file('<local filename>', '<bucket name>', '<given filename>')
+
+print(response)
+```
+Given filename is the filename you want the file to have **ON** the bucket.
+
+### Delete **file** from bucket
+```
+response = s3.Object('<bucket name>', '<filename>').delete()
+
+print(response)
+```
+
+### Download from bucket
+```
+response = my_bucket.download_file('<filename on bucket>', '<given local filename>')
+
+print(response)
+```
+Given local filename is what you want to call the downloaded file locally.
+
+### Delete bucket
+
+```
+response = s3.Bucket('my-bucket').delete()
+
+print(response)
+```
+
+These examples will all return and print **HTTP response codes**, which you can use to confirm successful execution.
