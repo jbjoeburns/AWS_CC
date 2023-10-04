@@ -24,6 +24,9 @@ First, you need to connect to your Ubuntu VM webserver (in our case this is runn
 This is done using `ssh`: 
 `ssh -i "<filepath to .pem file>" ubuntu@<public IP DNS>`
 
+Nginx needs to then be installed.
+`sudo apt install nginx -y`
+
 Then we need to ensure node js is installed, in our case specifically version 12.x.
 
 First, input this, which identifies the version to install: `curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -`
@@ -36,7 +39,16 @@ sudo npm install pm2 -g
 npm install
 ```
 
-Finally, we can then start the app. The app will be viewable on port 3000 of the public IP address.
+Finally, we can then restart and enable nginx, do this after any change to be safe.
+```
+#restart/start nginx
+sudo systemctl restart nginx
+
+#enable nginx
+sudo systemctl enable nginx
+```
+
+And start the app. The app will be viewable on port 3000 of the public IP address.
 
 `node app.js`
 
