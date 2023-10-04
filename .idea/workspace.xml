@@ -5,14 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a715413-4f9c-479a-92cb-58baea7d5bc8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Buckets_and_AWSCLI/Buckets_and_AWSCLI.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Buckets_and_AWSCLI/bucket_scripts/delete_bucket.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Buckets_and_AWSCLI/bucket_scripts/delete_file.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Buckets_and_AWSCLI/bucket_scripts/download_file.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Buckets_and_AWSCLI/bucket_scripts/list_buckets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Buckets_and_AWSCLI/bucket_scripts/list_objects_in_bucket.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Buckets_and_AWSCLI/bucket_scripts/make_bucket.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Buckets_and_AWSCLI/bucket_scripts/upload_file.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deploying_Node/Node_Deploy_Script.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Deploying_Node/Node_Deploy_Script.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deploying_Node/Node_Deployment.md" beforeDir="false" afterPath="$PROJECT_DIR$/Deploying_Node/Node_Deployment.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,6 +50,7 @@
       <recent name="C:\Users\joe-b\Documents\Coding\AWS_and_Cloud_Computing" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\joe-b\Documents\Coding\AWS_and_Cloud_Computing\Buckets_and_AWSCLI\bucket_scripts" />
       <recent name="C:\Users\joe-b\Documents\Coding\AWS_and_Cloud_Computing\Reverse_Proxy" />
       <recent name="C:\Users\joe-b\Documents\Coding\AWS_and_Cloud_Computing\Setting_Up_AWS_Instance" />
       <recent name="C:\Users\joe-b\Documents\Coding\AWS_and_Cloud_Computing\MongoDB" />
