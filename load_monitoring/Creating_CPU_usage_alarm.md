@@ -11,7 +11,7 @@ You can then create an alarm.
 
 Next you need to find the instance you want the alarm to track, in this case the instance ID for your AMI which can be searched for, but is also in EC2 metrics. 
 
-Then you can select the metric you want to track, in this case vCPU usage. This can also be searched for.
+Then you can select the metric you want to track, in this case CPUUtilization. This can also be searched for.
 - Tick the box then select metric.
 
 Next, you can specify metric conditions. In this case we will set the threshold value as **15 (15% CPU usage)** and **greater than**, so when CPU usage is over 15% the alarm will activate.
