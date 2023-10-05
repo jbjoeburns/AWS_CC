@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a715413-4f9c-479a-92cb-58baea7d5bc8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Setting_Up_AWS_Instance/userdata.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pm2/What_is_pm2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pm2/ami_launch.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/load_monitoring/Creating_CPU_usage_alarm.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reverse_Proxy/ReverseProxy_Deploy_Script.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Reverse_Proxy/ReverseProxy_Deploy_Script.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/load_monitoring/load_monitoring.md" beforeDir="false" afterPath="$PROJECT_DIR$/load_monitoring/load_monitoring.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
