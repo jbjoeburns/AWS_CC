@@ -2,6 +2,26 @@
 
 We can set up a system that automatically sets up more VMs when the CPU load threshold is reached, which is done to avoid exceeding 100% usage and therefore crashes and downtime.
 
+There are a number of different ways to ensure disasters don't happen, such as your application crashing. Auto scaling is just one of those measures.
+
+Means of disaster prevention include...
+- Monitoring dashboards
+  - These allow you to track certain important metrics such as CPU usage, vRAM usage and others.
+  - If these get too high, they will be visualised in a graph and measures can be taken to prevent this causing disasters.
+  - However, this requires constant monitoring by a human. Bad for automation and easy to miss any changes that could predict disasters.
+- Alarms
+  - These will notify you via email when a metric exceeds a preset threshold.
+  - Practically, this could be used to notify an individual if, for example, CPU usage reaches dangerous levels so a new instance can be created to shoulder some of the burden.
+  - Unlike dashboards, this doesn't require constant attention.
+  - However, this requires human intervention so is poor for automation
+- Auto scaling
+  - The ideal solution to preventing high CPU usage related disasters.
+  - This will create a new instance automatically to shoulder the burden of high CPU, automatically mitigating the issue.
+  - This is far less susceptible to human error, and requires little attention.
+  - However, autoscaling doesn't invalidate alarms and dashboards.
+  - Dashboards still have use in tracking metrics over time, and can be used to inform permanent up and downscaling decisions and changes to auto scaling settings.
+  - Alarms are also useful if unexpected traffic causes high CPU when the maximum number of instances defined by auto scaling parameters has already been reached, so changes can be made to parameters to allow for greater auto scaling and preventing disaster.
+
 Need to allow VM to make more VMs. This can be done with a **launch template**.
 - **Launch template** is the parameters/settings we want for our VM, like when we usually set them up. This can be read by the **auto scaling group**.
 - Basically acts like instructions for our auto scaling group to follow when making new instances.
