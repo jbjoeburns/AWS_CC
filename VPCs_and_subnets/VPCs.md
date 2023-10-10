@@ -61,6 +61,17 @@ Below is a diagram depicting typical VPS structure
 
 ![2.png](2.png)
 
+First, the internet traffic passes through the internet gateway. This is just the access point that allows two networks that have different protocols to connect with each other.
+
+Once this is done, the router directs the traffic by forwarding packets to the correct location. In our case this most importantly directs packets from connecting users to the app.
+- This also uses a table of rules to know where traffic should be directed. In our case, connections via HTTP and SSH ports are directed to the the public subnetwork which contains the app instance.
+
+The connections are then scrutinised by the security groups. Connections via HTTP ports are handled with different protocols to others for example.
+
+In the public subnet, requests are made (via port 27017, the mongo port) to the private subnet.
+- This is then routed by the 2nd router (which is using the default rules table, as this is internal and requests cannot be dangerous) to the private subnet
+- Security groups filter any requests that aren't through port 27017, as we shouldn't get any requests that aren't via the mongo port as this subnet's instance is only for handling a mongo database (with the exception of ssh, but this isn't required)
+
 ## Setup walkthrough
 
 ### FIRST CREATING VPC
@@ -191,17 +202,17 @@ VERY VERY IMPORTANT TO DO EXPORT COMMAND WITH CORRECT IP, COPY PRIVATE IP FROM D
 #!/bin/bash
 
 # Export command, to find db
-export DB_HOST=mongodb://3.250.90.26:27017/posts
+export DB_HOST=mongodb://10.0.3.169:27017/posts
+
+# install node (may not need this if using instance with it already installed)
+sudo npm install
 
 # move to app directory
 cd /home/ubuntu/app/app
 sudo systemctl restart nginx
 
-# install node (may not need this if using instance with it already installed)
-sudo npm install
-
 # seed db
-sudo node seeds/seed.js
+node seeds/seed.js
 
 # install pm2 (may not need this if using instance with it already installed)
 sudo npm install pm2 -g
@@ -216,3 +227,13 @@ pm2 start app.js
 Then launch.
 
 The IP attached to this instance will be the one needed to visit your site.
+
+# Important Blockers!
+
+Remember to NOT run `node seeds/seed.js` as superuser. This will not work.
+
+`sudo npm install` should be done in the home directory. If you install it in the app folder, this will cause issues getting the app to run.
+
+NEVER delete packages.json. This is a record of your node packages and can cause issues running node modules if you get rid of it.
+
+Remember to always restart nginx when deploying a new app instance! 
