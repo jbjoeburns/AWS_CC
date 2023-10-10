@@ -191,16 +191,19 @@ VERY VERY IMPORTANT TO DO EXPORT COMMAND WITH CORRECT IP, COPY PRIVATE IP FROM D
 #!/bin/bash
 
 # Export command, to find db
-export DB_HOST=mongodb://10.0.3.236:27017/posts
+export DB_HOST=mongodb://3.250.90.26:27017/posts
 
-# install app
+# move to app directory
 cd /home/ubuntu/app/app
-npm install
+sudo systemctl restart nginx
+
+# install node (may not need this if using instance with it already installed)
+sudo npm install
 
 # seed db
-node seeds/seed.js
+sudo node seeds/seed.js
 
-# install pm2
+# install pm2 (may not need this if using instance with it already installed)
 sudo npm install pm2 -g
 
 # kill, in case anything else is running

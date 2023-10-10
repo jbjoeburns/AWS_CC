@@ -15,6 +15,7 @@ sudo apt update
 
 # install mongodb
 sudo apt-get install -y mongodb-org=3.2.20 mongodb-org-server=3.2.20 mongodb-org-shell=3.2.20 mongodb-org-mongos=3.2.20 mongodb-org-tools=3.2.20
+sudo apt-get install -y mongodb-org=3.2.20 mongodb-org-server=3.2.20 mongodb-org-shell=3.2.20 mongodb-org-mongos=3.2.20 mongodb-org-tools=3.2.20
 
 # edit the config to define what IP we want to be able to connect to the database.
 sudo sed '24s|bindIp: 127.0.0.1/bindIp: 0.0.0.0|' /etc/mongod.conf
