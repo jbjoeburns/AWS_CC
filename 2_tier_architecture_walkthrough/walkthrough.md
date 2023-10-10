@@ -14,8 +14,6 @@ These can be used to run servers and networks using VPCs.
 
 ## What are VPCs?
 
-VPCs are 
-
 Like a real network, VPC architecture consists of many important components.
 
 CIDR blocks
