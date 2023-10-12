@@ -18,6 +18,8 @@ Next, you can specify metric conditions. In this case we will set the threshold 
 
 You can also select how often the CPU usage will be checked by the alarm under the **period** section.
 
+![3.png](3.png)
+
 Then, we can create a new SNS topic to be notified, in this we can give it an appropriate name again, and provide the email address we want notifications to be sent to.
 - A minute or so following this, you will get an email asking for confirmation. Confirm the email address to receive alarms.
 
