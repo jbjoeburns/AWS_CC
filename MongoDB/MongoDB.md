@@ -26,7 +26,7 @@ Then do this to install it.
 
 Finally, we edit the config to define what IP we want to be able to connect to the database.
 
-- `sudo nano /etc/mongod.conf`
+- `sudo nano /etc/mongodb.conf`
 - change line 24 to `bindIp: 0.0.0.0`
 
 Then start mongoDB.
