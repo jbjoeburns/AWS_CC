@@ -1,4 +1,4 @@
-# This is a general overview for Cloud Computing with AWS. For more specific tutorials, go to the following links:
+# This is a general overview for Cloud Computing with AWS. For more specific AWS tutorials, go to the following links:
 
 Bash commands useful when working with AWS remotely: https://github.com/jbjoeburns/AWS_CC/blob/master/Linux/Linux_Commands.md
 
