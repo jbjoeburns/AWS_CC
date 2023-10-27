@@ -2,7 +2,7 @@
 
 Bash commands useful when working with AWS remotely: https://github.com/jbjoeburns/AWS_CC/blob/master/Linux/Linux_Commands.md
 
-Creating basic AWS EC2 instance: https://github.com/jbjoeburns/AWS_CC/blob/master/Setting_Up_AWS_Instance/Setting_Up_AWS_Instance.md
+Creating basic AWS EC2 instance and running nginx on it: https://github.com/jbjoeburns/AWS_CC/blob/master/Setting_Up_AWS_Instance/Setting_Up_AWS_Instance.md
 
 Overview of AMIs: https://github.com/jbjoeburns/AWS_CC/blob/master/Setting_Up_AWS_Instance/AMI.md
 
