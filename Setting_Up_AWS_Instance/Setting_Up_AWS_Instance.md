@@ -61,7 +61,9 @@ Then we set up security details...
 5. Then check if nginx is correctly running.
    - `sudo systemctl status nginx`
 
-Once everything is set up you can then connect via the server IP in a browser.
+Once everything is set up you can then connect via the server IP in a browser and should expect to see this page.
+
+![3.png](3.png)
 
 ## Important Definitions
 
