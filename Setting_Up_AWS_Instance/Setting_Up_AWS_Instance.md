@@ -7,7 +7,6 @@ Navigate to the following...
 5. Launch Instances
 
 ## Instance Setup
-**Name**
 
 First need to input name. There are specific guidelines for this:
 - Always starts with "tech254_joe_"
